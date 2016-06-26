@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1466932054 source:e:\codeblocks\methods-of-integral\computes_integral\integrand.c
+	"methods.h"
+
+1466932714 e:\codeblocks\methods-of-integral\computes_integral\methods.h
+	<math.h>
+
+1466932427 source:e:\codeblocks\methods-of-integral\computes_integral\main.c
+	<stdio.h>
+	<stdlib.h>
+	"methods.h"
+
+1466932684 source:e:\codeblocks\methods-of-integral\computes_integral\simpson_formula.c
+	"methods.h"
+
+1466931667 source:e:\codeblocks\methods-of-integral\computes_integral\trapezoidal_formula.c
+	"methods.h"
+
