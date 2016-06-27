@@ -21,8 +21,8 @@ double Romberg_algorithm(double a, double b, double precision)
 
     while (1)
     {
-        k++;
-        h = h / 2;
+        //k++;
+        //h = h / 2;
 
         temp_sum = 0.0;     // Must be cleared to 0 before every loop
         for (i = 0; i < pow(2, k); i++)
@@ -34,19 +34,22 @@ double Romberg_algorithm(double a, double b, double precision)
         }
 
         //  Compute the value of trapezium
-        T[k] = 0.5 * T[k - 1] + (h / 2) * temp_sum;
+        T[k + 1] = 0.5 * T[k] + (h / 2) * temp_sum;
 
         // Compute the value of acceleration
-        for (n = 1; n <= k; n++)
+        for (n = 1; n <= (k + 1); n++)
         {
-            T[k] = (pow(4, n) / (pow(4, n) - 1)) * T[k - 1] - 1 / (pow(4, n) - 1) * T[k];
+            T[k + 1] = (pow(4, n) / (pow(4, n) - 1)) * T[k + 1] - (1 / (pow(4, n) - 1)) * T[k];
         }
-        if (T[k] - T[k - 1] <= precision)
+        if (fabs(T[k + 1] - T[k]) <= precision)
         {
             break;
         }
+
+        k++;
+        h = h / 2;
         realloc(T, 2 + k);
     }
-
-    return T[k];
+    free(T);
+    return T[k + 1];
 }

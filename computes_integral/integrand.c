@@ -8,7 +8,7 @@ double integrand(double x)
         //x = 0.000000001;
     }
     //double func = sqrt(x) * log(x);
-    double func = pow(x, (3 / 2));
+    double func = pow(x, 1.5);
 
     return func;
 }

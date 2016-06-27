@@ -13,7 +13,7 @@ int main()
 
     value_trap = trapezoidal_formula(a, b);
     value_simp = Simpson_formula(a, b);
-    value_Romberg = Romberg_algorithm(a, b, 0.000005);
+    value_Romberg = Romberg_algorithm(a, b, 0.0001);
     printf("The definite integral of this function in [%d, %d] is:\n", (int)a, (int)b);
 
     printf("Using trapezoidal formula: %lf\n", value_trap);
