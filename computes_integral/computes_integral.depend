@@ -1,11 +1,13 @@
 # depslib dependency file v1.0
-1466932054 source:e:\codeblocks\methods-of-integral\computes_integral\integrand.c
+1467007087 source:e:\codeblocks\methods-of-integral\computes_integral\integrand.c
 	"methods.h"
 
-1466932714 e:\codeblocks\methods-of-integral\computes_integral\methods.h
+1467006453 e:\codeblocks\methods-of-integral\computes_integral\methods.h
+	<stdlib.h>
+	<stdio.h>
 	<math.h>
 
-1466932427 source:e:\codeblocks\methods-of-integral\computes_integral\main.c
+1467007136 source:e:\codeblocks\methods-of-integral\computes_integral\main.c
 	<stdio.h>
 	<stdlib.h>
 	"methods.h"
@@ -13,6 +15,9 @@
 1466932684 source:e:\codeblocks\methods-of-integral\computes_integral\simpson_formula.c
 	"methods.h"
 
-1466931667 source:e:\codeblocks\methods-of-integral\computes_integral\trapezoidal_formula.c
+1466991119 source:e:\codeblocks\methods-of-integral\computes_integral\trapezoidal_formula.c
+	"methods.h"
+
+1467006943 source:e:\codeblocks\methods-of-integral\computes_integral\romberg_algorithm.c
 	"methods.h"
 

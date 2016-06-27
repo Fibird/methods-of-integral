@@ -31,7 +31,17 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="Simpson_formula.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="integrand.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="methods.h" />
+		<Unit filename="trapezoidal_formula.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Extensions>
