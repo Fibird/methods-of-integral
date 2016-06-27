@@ -31,6 +31,9 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="Romberg_algorithm.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="Simpson_formula.c">
 			<Option compilerVar="CC" />
 		</Unit>

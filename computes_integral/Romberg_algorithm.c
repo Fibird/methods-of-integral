@@ -41,6 +41,7 @@ double Romberg_algorithm(double a, double b, double precision)
         {
             T[k + 1] = (pow(4, n) / (pow(4, n) - 1)) * T[k + 1] - (1 / (pow(4, n) - 1)) * T[k];
         }
+        // Reaches the need of precision given
         if (fabs(T[k + 1] - T[k]) <= precision)
         {
             break;
